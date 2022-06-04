@@ -1,17 +1,19 @@
-Front End Web Developer - Technical Test
+# Front End Web Developer - Technical Test
 
 The test is divided into two parts:
 • Part 1 is a set of 6 questions worth 12 marks in total.
 • Part 2 is a practical exercise worth 30 marks in total.
 You may use any web sources you wish but this should be your OWN work and you should be able to justify/explain your answers.
 
-Part 1. Questions on Web Development
+## Part 1. Questions on Web Development
 
-Programming (general)
+### Programming (general)
+
 Q1. Write pseudocode OR describe the key steps for printing the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 (4 marks)
 
-HTML/CSS
+### HTML/CSS
+
 Q2. You have an application where every user has an image avatar that is displayed when they post a comment. You want to style these images differently from other images. Create a CSS class named avatar that fulfils the following requirements:
 • The avatar's border is rounded, so that it appears as a circle.
 • The avatar's width and height are both 150px.
@@ -21,7 +23,8 @@ Q2. You have an application where every user has an image avatar that is display
 Q3. In HTML what is the difference between an ID and Class
 (1 mark)
 
-JavaScript
+### JavaScript
+
 Q4. What is the value of foo?
 (1 mark)
 let foo = 10 + '20';
@@ -32,7 +35,9 @@ Q5. What value is returned from the following statement?
 
 Q6. In JavaScript, what is the difference between == and ===
 (1 mark)
-Part 2. Practical Exercise
+
+## Part 2. Practical Exercise
+
 The following practical exercise is worth 30 marks in total.
 You may use any web sources you wish but this should be your OWN work.
 
