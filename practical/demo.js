@@ -12,39 +12,39 @@ function searchType() {
   console.log(searchTypeInput);
 }
 
-btn.addEventListener("click", function () {
-  var ourRequest = new XMLHttpRequest();
-  ourRequest.open(
-    "GET",
-    "http://openlibrary.org/search.json?q=" + textInput + "&page=1&limit=10"
-  );
-  ourRequest.onload = function () {
-    var ourData = JSON.parse(ourRequest.responseText);
-    console.log(ourData.docs);
+if (typeof textInput === "string" && searchTypeInput === "title") {
+  btn.addEventListener("click", function () {
+    var ourRequest = new XMLHttpRequest();
+    ourRequest.open(
+      "GET",
+      "http://openlibrary.org/search.json?q=" + textInput + "&page=1&limit=10"
+    );
+    ourRequest.onload = function () {
+      var ourData = JSON.parse(ourRequest.responseText);
+      console.log(ourData.docs);
 
-    renderHTML(ourData.docs);
-  };
-  ourRequest.send();
-});
+      renderHTML(ourData.docs);
+    };
+    ourRequest.send();
+  });
+} else {
+  btn.addEventListener("click", function () {
+    var ourRequest = new XMLHttpRequest();
+    ourRequest.open(
+      "GET",
+      "https://openlibrary.org/api/books?bibkeys=ISBN:" +
+        searchTypeInput +
+        "&jscmd=data&format=json"
+    );
+    ourRequest.onload = function () {
+      var ourData = JSON.parse(ourRequest.responseText);
+      console.log(ourData.docs);
 
-// } else {
-//   btn.addEventListener("click", function () {
-//     var ourRequest = new XMLHttpRequest();
-//     ourRequest.open(
-//       "GET",
-//       "https://openlibrary.org/api/books?bibkeys=ISBN:" +
-//         isbnInput +
-//         "&jscmd=data&format=json"
-//     );
-//     ourRequest.onload = function () {
-//       var ourData = JSON.parse(ourRequest.responseText);
-//       console.log(ourData.docs);
-
-//       renderHTML(ourData.docs);
-//     };
-//     ourRequest.send();
-//   });
-// }
+      renderHTML(ourData.docs);
+    };
+    ourRequest.send();
+  });
+}
 
 function renderHTML(data) {
   var htmlString = data;

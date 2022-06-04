@@ -1,3 +1,77 @@
+html {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
 body {
-  background-color: wheat;
+  background-color: whitesmoke;
+  margin: auto;
+}
+
+header {
+  font-size: 3rem;
+  background-color: #44c767;
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn {
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+.btn:hover {
+  background-color: #5cbf2a;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+select {
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  margin-left: 5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+select:hover {
+  background-color: #5cbf2a;
+}
+select:active {
+  position: relative;
+  top: 1px;
+}
+
+form {
+  padding: 5rem;
+}
+
+input {
+  height: 2rem;
+  width: 15rem;
+}
+
+#info {
+  background-color: #18ab29;
+  opacity: 0.3;
+  border: 2px solid #023909;
+  margin-top: 5rem;
+  height: 20rem;
+  font-size: 1.6rem;
 }
