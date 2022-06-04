@@ -4,3 +4,12 @@
 • The avatar's width and height are both 150px.
 • The avatar has a solid border, has a width of 2px, and be coloured grey.
 (4 marks) */
+
+.avatar {
+  border: 2px solid gray;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Please see corresponding q2.html to see the avatar.
