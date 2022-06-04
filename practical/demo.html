@@ -9,16 +9,21 @@
   </head>
   <body>
     <form>
-      <input type="text" placeholder="enter a book title" />
-      <select name="cars" id="cars">
+      <input type="text" id="myText" value="Some text..." />
+      <select
+        onchange="searchType()"
+        name="searchTypeInput"
+        id="searchTypeInput"
+      >
+        <option value="default">Please Choose</option>
         <option value="title">By Title</option>
         <option value="isbn">By ISBN</option>
       </select>
-      <input type="button" value="Search" />
     </form>
-    <button id="btn">Fetch Info</button>
+    <button onclick="textSearch()" id="btn">Search</button>
 
     <div id="info"></div>
+    <div id="output"></div>
     <script src="demo.js"></script>
   </body>
 </html>
